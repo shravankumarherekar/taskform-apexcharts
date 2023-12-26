@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task.taskName }} - {{ task.dueDate }}
+    <button (click)="onDelete(task.id)">Delete</button>
+    <!-- Add Edit button and routing link here -->
+  </li>
+</ul>

@@ -1,0 +1,19 @@
+
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <label>
+    Task Name:
+    <input type="text" formControlName="taskName" />
+  </label>
+  <br />
+  <label>
+    Description:
+    <textarea formControlName="description"></textarea>
+  </label>
+  <br />
+  <label>
+    Due Date:
+    <input type="date" formControlName="dueDate" />
+  </label>
+  <br />
+  <button type="submit">Submit</button>
+</form>
