@@ -1,7 +1,7 @@
 // task-form.component.ts
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Task } from '../task.model';
+import { Task } from '../../task.model';
 import { TaskService } from '../../task.service';
 
 @Component({
