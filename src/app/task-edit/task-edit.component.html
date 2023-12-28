@@ -1,4 +1,4 @@
-<!-- task-form.component.html -->
+<!-- task-edit.component.html -->
 <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="task-form">
   <label for="name" class="form-label">Task Name:</label>
   <input type="text" id="name" formControlName="name" class="form-input" />
@@ -19,6 +19,6 @@
   />
 
   <button type="submit" class="form-button">
-    {{ task ? "Edit Task" : "Add Task" }}
+    {{ taskId ? "Update Task" : "Add Task" }}
   </button>
 </form>

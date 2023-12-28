@@ -1,1 +1,7 @@
-<!-- <apx-chart [series]="series" [chart]="chart" [title]="title"></apx-chart> -->
+<!-- chart.component.html -->
+<div *ngIf="chartOptions">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+  ></apx-chart>
+</div>

@@ -1,0 +1,32 @@
+/* task-list.component.css */
+.task-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-details {
+  flex-grow: 1;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+button.edit {
+  background-color: #3498db;
+  color: white;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+}

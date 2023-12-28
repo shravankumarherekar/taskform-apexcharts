@@ -8,7 +8,7 @@ import { Task } from './task.model';
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'https://dummyjson.com/products';
+  private apiUrl = 'https://657461bff941bda3f2afadc1.mockapi.io/users';
 
   constructor(private http: HttpClient) {}
 
@@ -28,5 +28,9 @@ export class TaskService {
   deleteTask(taskId: number): Observable<void> {
     const url = `${this.apiUrl}/${taskId}`;
     return this.http.delete<void>(url);
+  }
+  getTaskById(taskId: string): Observable<Task> {
+    const url = `${this.apiUrl}/${taskId}`;
+    return this.http.get<Task>(url);
   }
 }

@@ -11,6 +11,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { TaskEditComponent } from './task-edit/task-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +20,14 @@ import { CommonModule } from '@angular/common';
     TaskListComponent,
     ChartComponent,
     NavigationComponent,
+    TaskEditComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    RouterLink,
+    RouterLinkActive,
     ReactiveFormsModule,
     HttpClientModule,
     NgApexchartsModule,

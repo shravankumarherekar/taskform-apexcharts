@@ -1,7 +1,7 @@
 // task.model.ts
 export interface Task {
   id: number;
-  taskName: string;
+  name: string;
   description: string;
   dueDate: Date;
 }
